@@ -1,3 +1,3 @@
 DemandesController:
   path: /
-  controller: App\Controller\DemandesController::showDemandes
+  controller: App\Controller\DemandesController::index

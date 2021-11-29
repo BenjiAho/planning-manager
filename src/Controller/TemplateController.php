@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Bundle\FrameworkBundle\Controller;
+namespace App\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;

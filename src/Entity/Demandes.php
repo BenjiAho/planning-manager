@@ -2,7 +2,7 @@
 
 namespace App\Entity;
 
-use App\Controller\MainController;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="demandes")
  * @ORM\Entity
  */
-class Demandes extends MainController
+class Demandes
 {
     /**
      * @var int
@@ -87,33 +87,33 @@ class Demandes extends MainController
     }
 
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getDateEnvoi(): \DateTime
+    public function getDateEnvoi(): DateTime
     {
         return $this->dateEnvoi;
     }
 
     /**
-     * @param \DateTime $dateEnvoi
+     * @param DateTime $dateEnvoi
      */
-    public function setDateEnvoi(\DateTime $dateEnvoi): void
+    public function setDateEnvoi(DateTime $dateEnvoi): void
     {
         $this->dateEnvoi = $dateEnvoi;
     }
 
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getDateTraitement(): \DateTime
+    public function getDateTraitement(): DateTime
     {
         return $this->dateTraitement;
     }
 
     /**
-     * @param \DateTime $dateTraitement
+     * @param DateTime $dateTraitement
      */
-    public function setDateTraitement(\DateTime $dateTraitement): void
+    public function setDateTraitement(DateTime $dateTraitement): void
     {
         $this->dateTraitement = $dateTraitement;
     }
@@ -135,17 +135,17 @@ class Demandes extends MainController
     }
 
     /**
-     * @return \DateTime
+     * @return DateTime
      */
-    public function getDateFermeture(): \DateTime
+    public function getDateFermeture(): DateTime
     {
         return $this->dateFermeture;
     }
 
     /**
-     * @param \DateTime $dateFermeture
+     * @param DateTime $dateFermeture
      */
-    public function setDateFermeture(\DateTime $dateFermeture): void
+    public function setDateFermeture(DateTime $dateFermeture): void
     {
         $this->dateFermeture = $dateFermeture;
     }
@@ -172,16 +172,16 @@ class Demandes extends MainController
     private $description;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
-     * @ORM\Column(name="date-envoi", type="date", nullable=false)
+     * @ORM\Column(name="dateEnvoi", type="date", nullable=false)
      */
     private $dateEnvoi;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
-     * @ORM\Column(name="date-traitement", type="date", nullable=false)
+     * @ORM\Column(name="dateTraitement", type="date", nullable=false)
      */
     private $dateTraitement;
 
@@ -193,9 +193,9 @@ class Demandes extends MainController
     private $statut;
 
     /**
-     * @var \DateTime
+     * @var DateTime
      *
-     * @ORM\Column(name="date-fermeture", type="date", nullable=false)
+     * @ORM\Column(name="dateFermeture", type="date", nullable=false)
      */
     private $dateFermeture;
 

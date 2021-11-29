@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+{% for demande in demandes %}
+    <div>
+        {{ demande.expediteur }}
+        {{ demande.objet }}
+        {{ demande.description }}
+        {{ demande.ID }}
+    </div>
+{% endfor %}
+
+</body>
+</html>

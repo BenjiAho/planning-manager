@@ -13,6 +13,69 @@ use Doctrine\ORM\Mapping as ORM;
 class Hotesses
 {
     /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNom(): string
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param string $nom
+     */
+    public function setNom(string $nom): void
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDemande(): string
+    {
+        return $this->demande;
+    }
+
+    /**
+     * @param string $demande
+     */
+    public function setDemande(string $demande): void
+    {
+        $this->demande = $demande;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isDisponibilite(): bool
+    {
+        return $this->disponibilite;
+    }
+
+    /**
+     * @param bool $disponibilite
+     */
+    public function setDisponibilite(bool $disponibilite): void
+    {
+        $this->disponibilite = $disponibilite;
+    }
+    /**
      * @var int
      *
      * @ORM\Column(name="ID", type="integer", nullable=false)

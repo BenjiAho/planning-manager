@@ -19,9 +19,9 @@
         <option name="fixed"/>
       </options>
     </field>
-    <field name="dateEnvoi" type="date" column="date-envoi" nullable="false"/>
-    <field name="dateTraitement" type="date" column="date-traitement" nullable="false"/>
+    <field name="dateEnvoi" type="date" column="dateEnvoi" nullable="false"/>
+    <field name="dateTraitement" type="date" column="dateTraitement" nullable="false"/>
     <field name="statut" type="boolean" column="statut" nullable="false"/>
-    <field name="dateFermeture" type="date" column="date-fermeture" nullable="false"/>
+    <field name="dateFermeture" type="date" column="dateFermeture" nullable="false"/>
   </entity>
 </doctrine-mapping>

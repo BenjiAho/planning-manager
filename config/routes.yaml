@@ -1,3 +1,11 @@
-DemandesController:
+HomepageController:
   path: /
-  controller: App\Controller\DemandesController::index
+  controller: App\Controller\HomepageController::getHomepage
+
+DemandesController:
+  path: /demandes
+  controller: App\Controller\demandes::allDemandes
+
+HotessesController:
+  path: /hotesses
+  controller: App\Controller\hotesses::allHotesses
